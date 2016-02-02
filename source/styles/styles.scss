@@ -1,0 +1,268 @@
+@font-face {
+	font-family: 'Roboto';
+	src: url('/fonts/Roboto-Light.ttf');
+}
+
+html, body {
+	padding: 0;
+	margin: 0;
+	font-family: "Microsoft YaHe",'Roboto';
+	width: 100%;
+	height: 100%;
+}
+
+a {
+	text-decoration: blink;
+}
+
+#rootElement {
+	min-height: 100%;
+	height:auto !important;
+	height:100%;
+	position:relative;
+}
+
+.top-nav {
+	height: inherit;
+
+	.logo {
+		float: left;
+		width: 110px;
+	}
+	.menuList {
+
+		ul {
+			height: inherit;
+			list-style: none;
+			line-height: 60px;
+			padding: 0;
+			margin: 0;
+			li {
+				float: left;
+				padding: 0 20px;
+
+				a {
+					text-decoration: none;
+					color: #fff;
+					font-size: 14px;
+					font-weight: bold;
+				}
+				a:hover {
+					color: #f48fb1;
+				}
+			}
+		}
+	}
+	.search-control {
+		line-height: 55px;
+	}
+}
+.cover-panel {
+	width: 200px;
+	display: inline-block;
+	float: left;
+	margin: 1px 1px 0 0;
+
+	.name-panel {
+		width: 100%;
+		a {
+			color: #666;
+			line-height: 24px;
+			font-size: 14px;
+		}
+	}
+	.cover {
+		width: 200px;
+		height: 150px;
+		display: inline-block;
+		overflow: hidden;
+		float: left;
+		position: relative;
+		
+		img {
+			z-index: 1;
+			width: 100%;
+			height: 100%;
+		}
+		.cover-tag {
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: 5;
+			font-size: 16px;
+			background-color: #666;
+			color: #fff;
+			padding: 5px 10px;
+
+			&.right {
+				right: 0;
+			}
+
+			&.cover-tag-class {
+				top: 0px;
+				right: 0;
+				background-color: transparent;
+			}
+		}
+
+		.online {
+			color: #fff;
+			position: absolute;
+			right: 10px;
+			bottom: 5px;
+			font-size: 14px;
+			z-index: 5;
+		}
+
+		.markAnim {
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			left: 0;
+			top: 0;
+			transform: translateY(100%);
+			transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+			&.mark {
+				opacity: 0.3;
+				background-color: #fff;
+			}
+
+			&.play {
+				text-align: center;
+				vertical-align: middle;
+			}
+			&.name {
+				.name-panel {
+					position:absolute;
+					bottom: 0;
+					left: 10px;
+					color: #fff;
+					line-height: 24px;
+				}
+			}
+			&.show {
+				transform: translateY(0);
+			}
+
+		}
+	}
+	
+	&:first-child .cover .rank, &:nth-of-type(2) .cover .rank,&:nth-of-type(3) .cover .rank {
+		background-color: rgb(238,98,153);
+	}
+
+	&.hot-top-1 {
+		width: 375px;
+		height: 301px;
+
+		.cover {
+			width: 100%;
+			height: 100%;
+		}
+	}
+
+	&.hot-clan, &.hot {
+		margin: 6px 20px 20px 0;
+	}
+	&.hot-clan .cover, &.hot .cover {
+		padding-top: 5px;
+	}
+
+	&.hot-clan:nth-child(4n+0), &.hot:nth-child(4n+0) {
+		margin-right: 0;
+	}
+}
+
+.body-container {
+	width: 1180px;
+	margin: 0 auto;
+
+	.main-panel {
+		width: 865px;
+		float: left;
+
+		.hot-clan:last-child {
+			margin-right: 0;
+		}
+	}
+
+	.right-panel {
+		width: 280px;
+		float: right;
+	}
+
+	.column-title {
+		margin: 10px 0;
+		width: 100%;
+		font-size: 24px;
+		font-weight: 700;
+	}
+}
+
+.main {
+	height: 100%;
+	padding-bottom: 140px;
+}
+
+.setting-panel {
+	margin-top: 20px;
+}
+
+.footer {
+	clear: both;
+	width: 100%;
+	text-align: center;
+	height: 110px;
+	background-color: #333;
+	position: absolute;
+	bottom: 0;
+	p {
+		margin-top: 40px;
+		line-height: 20px;
+		font-size: 12px;
+		color: #ddd;
+	}
+}
+
+.al {
+	width: 28px;
+    height: 16px;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+.al24 {
+	width: 36px;
+    background-image: url(/images/al_14.gif);
+}
+
+.class-b {
+	background-image: url(/images/level_icon.png);
+    background-repeat: no-repeat;
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: middle;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 22px;
+    width: 50px;
+    z-index: 4;
+}
+
+.class-b {
+    background-position: 0 -64px;
+}
+
+.float-r {
+	float: right!important;
+}
+
+.clear {
+	clear: both;
+}
+
+.diverMarginTop20 {
+	margin-top: 20px;
+}

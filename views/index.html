@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <link rel="shortcut icon" href="/images/favicon.ico">
+	<title>订阅框架</title>
+	<link rel='stylesheet' href='/styles/styles.css' type='text/css' />
+</head>
+<body>
+	<div id="rootElement">${reactString}</div>
+	<script>
+      window.__INITIAL_STATE__ = ${JSON.stringify(finalState)}
+    </script>
+    <script type="text/javascript" src="/js/commons.js"></script>
+	<script type="text/javascript" src="/js/main.bundle.js"></script>
+</body>
+</html>
